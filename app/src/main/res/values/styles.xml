@@ -12,8 +12,8 @@
   </style>
 
   <style name = "FizzBuzzToggle" parent="AppTheme">
-    <item name="android:textSize">32sp</item>
-    <item name = "android:layout_width">120dp</item>
+    <item name="android:textSize">24sp</item>
+    <item name = "android:layout_width">110dp</item>
   </style>
 
   <style name = "Tally" parent="AppTheme">
