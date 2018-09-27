@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
   private int incorrect;
   private ToggleButton fizzToggle;
   private ToggleButton buzzToggle;
+  private ToggleButton woofToggle;
   private TextView correctTally;
   private TextView incorrectTally;
 
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     valueDisplay = findViewById(R.id.value_display);
     fizzToggle = findViewById(R.id.fizz_toggle);
     buzzToggle = findViewById(R.id.buzz_toggle);
+    woofToggle = findViewById(R.id.woof_toggle);
     correctTally = findViewById(R.id.correct_tally);
     incorrectTally = findViewById(R.id.incorrect_tally);
    rng = new Random();
@@ -52,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
       if (
           ((value % 3 == 0)== fizzToggle.isChecked())
           && ((value % 5 ==0) == buzzToggle.isChecked())
+          && ((value % 7 ==0)== woofToggle.isChecked())
       ){
         correct++;
       } else {
@@ -60,10 +63,11 @@ public class MainActivity extends AppCompatActivity {
     }
     correctTally.setText(getString(R.string.correct_tally_format, correct));
     incorrectTally.setText(getString(R.string.incorrect_tally_format, incorrect));
- value = rng.nextInt(100)+1;
+ value = rng.nextInt(104)+1;
  valueDisplay.setText(Integer.toString(value));
  fizzToggle.setChecked(false);
  buzzToggle.setChecked(false);
+ woofToggle.setChecked(false);
   }
 
   private class UpdateTask extends TimerTask {

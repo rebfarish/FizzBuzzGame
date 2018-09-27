@@ -4,6 +4,8 @@
   <string name = "fizz_on">FIZZ!</string>
   <string name = "buzz_off">buzz</string>
   <string name = "buzz_on">BUZZ!</string>
+  <string name= "woof_off">woof</string>
+  <string name= "woof_on">WOOF!</string>
   <string name = "correct_tally_format">%d correct</string>
   <string name = "incorrect_tally_format">%d incorrect</string>
 

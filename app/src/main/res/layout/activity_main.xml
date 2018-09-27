@@ -52,6 +52,17 @@
     android:textOff="@string/buzz_off"
     android:textOn="@string/buzz_on"
     app:layout_constraintLeft_toRightOf="@+id/fizz_toggle"
+    app:layout_constraintRight_toLeftOf="@+id/woof_toggle"
+    app:layout_constraintBottom_toBottomOf="parent"
+    />
+
+  <ToggleButton
+    android:id="@+id/woof_toggle"
+    style = "@style/FizzBuzzToggle"
+    android:layout_height="wrap_content"
+    android:textOff="@string/woof_off"
+    android:textOn="@string/woof_on"
+    app:layout_constraintLeft_toRightOf="@+id/buzz_toggle"
     app:layout_constraintRight_toRightOf="parent"
     app:layout_constraintBottom_toBottomOf="parent"
     />
